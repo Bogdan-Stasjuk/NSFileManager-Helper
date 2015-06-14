@@ -13,6 +13,7 @@
 		4B1F02B41B2E306E001FF329 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B1F02B21B2E306E001FF329 /* Main.storyboard */; };
 		4B1F02B61B2E306E001FF329 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B1F02B51B2E306E001FF329 /* Assets.xcassets */; };
 		4B1F02B91B2E306E001FF329 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B1F02B71B2E306E001FF329 /* LaunchScreen.storyboard */; };
+		4B1F02C31B2E30C9001FF329 /* NSFileManager+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1F02C21B2E30C9001FF329 /* NSFileManager+Helper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		4B1F02B51B2E306E001FF329 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B1F02B81B2E306E001FF329 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B1F02BA1B2E306E001FF329 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B1F02C11B2E30C9001FF329 /* NSFileManager+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Helper.h"; sourceTree = "<group>"; };
+		4B1F02C21B2E30C9001FF329 /* NSFileManager+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Helper.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		4B1F02A81B2E306E001FF329 /* NSFileManager+HelperDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4B1F02C01B2E30C9001FF329 /* NSFileManager+Helper */,
 				4B1F02AC1B2E306E001FF329 /* AppDelegate.h */,
 				4B1F02AD1B2E306E001FF329 /* AppDelegate.m */,
 				4B1F02AF1B2E306E001FF329 /* ViewController.h */,
@@ -78,6 +82,15 @@
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
+		};
+		4B1F02C01B2E30C9001FF329 /* NSFileManager+Helper */ = {
+			isa = PBXGroup;
+			children = (
+				4B1F02C11B2E30C9001FF329 /* NSFileManager+Helper.h */,
+				4B1F02C21B2E30C9001FF329 /* NSFileManager+Helper.m */,
+			);
+			path = "NSFileManager+Helper";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -149,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B1F02C31B2E30C9001FF329 /* NSFileManager+Helper.m in Sources */,
 				4B1F02B11B2E306E001FF329 /* ViewController.m in Sources */,
 				4B1F02AE1B2E306E001FF329 /* AppDelegate.m in Sources */,
 				4B1F02AB1B2E306E001FF329 /* main.m in Sources */,
@@ -213,7 +227,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -251,7 +265,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -263,6 +277,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "NSFileManager+HelperDemo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bogdan-stasjuk.NSFileManager-HelperDemo";
@@ -274,6 +289,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "NSFileManager+HelperDemo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bogdan-stasjuk.NSFileManager-HelperDemo";

@@ -1,8 +1,8 @@
 //
 //  ViewController.h
-//  NSFileManager+HelperDemo
+//  BSFileManagerDemo
 //
-//  Created by Bogdan Stasjuk on 6/15/15.
+//  Created by Bogdan Stasjuk on 6/14/15.
 //  Copyright © 2015 Bogdan Stasjuk. All rights reserved.
 //
 
