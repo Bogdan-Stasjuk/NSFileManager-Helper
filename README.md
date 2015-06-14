@@ -1,13 +1,15 @@
-# BSAppHelper
-Helper methods for determining different characteristics of the current application.
+# NSFileManager+Helper
+Helper methods for widening functionality of NSFileManager.
 
 
 ##Methods
 
 ```objc
-+ (NSDate *)installationDate;
++ (BOOL)createFile:(NSString *)filepath;
++ (unsigned long long)fileSize:(NSString *)path;
+
++ (NSURL *)getTmpURLWithFilename:(NSString *)filename;
 ```
-returns date when app was installed on the device.
 
 
 Demo
@@ -25,12 +27,12 @@ This class has been tested back to iOS 7.0.
 Installation
 ============
 
-__Cocoapods__: `pod 'BSAppHelper'`<br />
-__Manual__: Copy the __BSAppHelper__ folder in your project<br />
+__Cocoapods__: `pod 'NSFileManager+Helper'`<br />
+__Manual__: Copy the __NSFileManager+Helper__ folder in your project<br />
 
 Import header in your project. .pch is a good place ;)
 
-    #import "BSAppHelper.h"
+    #import "NSFileManager+Helper.h"
 
 License
 =======
